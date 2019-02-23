@@ -37,7 +37,7 @@ Call<ResponseBody> registerRequest(@Field("username") String username,
 Burada post metodunu etkinlestiriyoruz. Sunucu tarafinda body icinde alinacak keyler field icerigine giriliyor. Bu bilgileri request olusturdugumuz yerde veriyoruz. Burada önemli faktörlerden birisi ``@FormUrlEncoded`` Bu belirteç bize giden formatın bir form şeklinde olacağını söylüyor. Body sinde belirtilen değerler *key:value* şeklinde object formatındadır.
 
 ## PUT
-Put metodu genellikle güncelleme yaparken kullanılan bir http metodudur.
+Put metodu genellikle güncelleme yaparken kullanılan bir http metodudur.****
 Put, ``Post`` gibi field key word ile birlikte body data kısmına veriler gönderebilirsiniz. Bir diğer özelliği ise  ``get`` kullanılan path yani url uzerlinde erişim anahtarı üzerinden  veri gönderimi yapılabilir.
 
 

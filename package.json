@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "bdurdu-blog-site",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "My blog site",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Burkay Durdu <burkaydurd@outlook.com>",
   "dependencies": {
     "gatsby": "^2.1.17",
     "gatsby-image": "^2.0.29",
@@ -36,6 +33,7 @@
     "typography-theme-wordpress-2016": "^0.16.18"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "prettier": "^1.16.4"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",

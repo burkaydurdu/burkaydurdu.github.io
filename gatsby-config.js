@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `Burkay Durdu Blog`,
     author: `Burkay Durdu`,
-    description: ``,
+    description: `asdasdasdasdsad`,
     siteUrl: `https://`,
     social: {
       twitter: `burkay_durdu`,
