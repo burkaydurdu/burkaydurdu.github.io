@@ -7,7 +7,8 @@ module.exports = {
     siteUrl: `https://burkaydurdu.github.io`,
     social: {
       twitter: `burkay_durdu`,
-      github: `burkaydurdu`
+      github: `burkaydurdu`,
+      linkedin: `in/burkay-durdu-a45b03128`
     },
   },
   plugins: [

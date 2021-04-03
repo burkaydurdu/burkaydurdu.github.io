@@ -31,18 +31,22 @@ function Bio() {
               }}
             />
             <p>
-              I'm <strong>{author}</strong> I live in Istanbul, I like writing <strong> Code </strong><br/>
-              You should follow me
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                Twitter
-              </a>
-              {` `}
-              and
-              {` `}
-              <a href={`https://github.com/${social.github}`}>
-                Github
-              </a>
+              I'm <strong>{author}</strong>
+              <p>
+                <a href={`https://twitter.com/${social.twitter}`}>
+                  Twitter
+                </a>
+                {` `}
+                <a href={`https://www.linkedin.com/${social.linkedin}`}>
+                  Linkedin
+                </a>
+                {` `}
+                and
+                {` `}
+                <a href={`https://github.com/${social.github}`}>
+                  Github
+                </a>
+              </p>
             </p>
           </div>
         )
@@ -66,6 +70,7 @@ const bioQuery = graphql`
         social {
           twitter
           github
+          linkedin
         }
       }
     }
