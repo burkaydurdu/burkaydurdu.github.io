@@ -6,16 +6,14 @@ date: "2021-04-03"
 ### Blocking and Non-Blocking with Node.JS
 
 - **Blocking** methods execute synchronously and **non-blocking** methods execute asynchronously.
-
   - Example:
-
-    - ```javascript
+     ```javascript
       // This is a synchronous file read.
       const fs = require('fs');
       const data = fs.readFileSync('/file.md'); // blocks here until file is read
       ```
 
-    - ```javascript
+     ```javascript
       // This is a asynchronous
       const fs = require('fs');
       fs.readFile('/file.md', (err, data) => {
@@ -23,14 +21,14 @@ date: "2021-04-03"
       });
       ```
 
-    - ```javascript
+     ```javascript
       const fs = require('fs');
       const data = fs.readFileSync('/file.md'); // blocks here until file is read
       console.log(data);
       moreWork(); // will run after console.log
       ```
 
-    - ```javascript
+     ```javascript
       const fs = require('fs');
       fs.readFile('/file.md', (err, data) => {
         if (err) throw err;
@@ -38,9 +36,7 @@ date: "2021-04-03"
       });
       moreWork(); // will run before console.log
       ```
-
-
-
+  
 ### Single Thread
 
 - Javascript execution in Node.js is single threaded, so concurrency refers to the event loop's capacity to execute JavaScript callback functions after completing other work.
