@@ -1,12 +1,13 @@
 ---
 title: Node-JS Asynchronous and Single-threaded [NOTE]
-date: "2021-04-03"
+date: "2022-03-27"
 ---
 
 ### Blocking and Non-Blocking with Node.JS
 
 - **Blocking** methods execute synchronously and **non-blocking** methods execute asynchronously.
   - Example:
+  
      ```javascript
       // This is a synchronous file read.
       const fs = require('fs');
