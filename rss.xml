@@ -1,4 +1,184 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Burkay Durdu Blog]]></title><description><![CDATA[It is my blog site]]></description><link>https://burkaydurdu.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 28 Mar 2022 19:14:31 GMT</lastBuildDate><item><title><![CDATA[Node-JS Asynchronous and Single-threaded [NOTE]]]></title><description><![CDATA[Blocking and Non-Blocking with Node.JS Blocking methods execute synchronously and non-blocking methods execute asynchronously. Example…]]></description><link>https://burkaydurdu.github.io/nodejs-async/</link><guid isPermaLink="false">https://burkaydurdu.github.io/nodejs-async/</guid><pubDate>Sun, 27 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Blocking and Non-Blocking with Node.JS&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Burkay Durdu Blog]]></title><description><![CDATA[It is my blog site]]></description><link>https://burkaydurdu.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 31 Mar 2022 20:29:21 GMT</lastBuildDate><item><title><![CDATA[Goroutine & Go Scheduler]]></title><description><![CDATA[Rob Pike, Robert Griesemer ve Ken Thompson tarafından tasarlanmis. Açık kaynak kodlu ve  tipli bir programlama dilidir. 25 anahtar Sözcük…]]></description><link>https://burkaydurdu.github.io/goroutine-goscheduler/</link><guid isPermaLink="false">https://burkaydurdu.github.io/goroutine-goscheduler/</guid><pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Rob Pike&lt;/strong&gt;, &lt;strong&gt;Robert Griesemer&lt;/strong&gt; ve &lt;strong&gt;Ken Thompson&lt;/strong&gt; tarafından tasarlanmis.&lt;/li&gt;
+&lt;li&gt;Açık kaynak kodlu ve &lt;code class=&quot;language-text&quot;&gt;statik&lt;/code&gt; tipli bir programlama dilidir.&lt;/li&gt;
+&lt;li&gt;25 anahtar Sözcük (keyword)&lt;/li&gt;
+&lt;li&gt;Derlenen bir dildir.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;Thread (Tek CPU Kernel)&lt;/h5&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f8a0a930fb1bdd862acb199bec086a45/5205c/sc1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 17.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVQY0yWQwUrDQBRF+2fuBX/Er3DpQgVXunGn4NaltIqFCuqmxaIU2sam7bS0HdLMJGYynUmOSX1wFu/yuBxeI9gqgkgxlBGbNMPnCqtGWD1h5wzOO2y6JI8G5ImodsuuJlvjkhCXbfC+wFqLc45GczzlaSLorCN60qCDB9TLIfHbMdiCerLhLbp9hO6eQB2VkH6eoVoHxP0LcgeLhUAI8V/YCma8Sk2vKs2NwVQXcbKl/XPN4/CUYNPF7UCqNc/BJc3ROVP5hTWOLPvd283nc8IwpDGQW2r6K8lSJ5RFQVmWGJvyMbunHVwh4u+9aWIi3qd3dCY3rPR4n9Uv8d5japGKP6xhJk9wip/7AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;sc1&quot;
+        title=&quot;&quot;
+        src=&quot;/static/f8a0a930fb1bdd862acb199bec086a45/fcda8/sc1.png&quot;
+        srcset=&quot;/static/f8a0a930fb1bdd862acb199bec086a45/12f09/sc1.png 148w,
+/static/f8a0a930fb1bdd862acb199bec086a45/e4a3f/sc1.png 295w,
+/static/f8a0a930fb1bdd862acb199bec086a45/fcda8/sc1.png 590w,
+/static/f8a0a930fb1bdd862acb199bec086a45/5205c/sc1.png 833w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h5&gt;Thread (Multi CPU kernel)&lt;/h5&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8d26b9b8c26ff3d2923946f7c013d0fd/f0551/sc2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 35.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABKUlEQVQoz6XRy0sCURTH8fnLI42iRe+gvyF6bcqkNhYlFC1K0hEfqDOh47ydueM4OU3fbkItJNp44MOPszmcc69ihIK649Pyg1lq/ohFSqmYLrdDj2KjQ6lv8WAK4n6JsJInrG5ImwTVLWlb2iGs7RKq+wh1j0A9IBn7iCjGcWym0ylK2xvxZHmUtT6PQ4eqG/HuVkh6hyT6GYl2wuTXsex/HMn+lCQO5MAxtm2RpimKmEwYBCHWOJYp8KNosZPrtse94XD3ZlCWG76YHnHi4UY9vEifo83R+chSsiybbfedyqsceGO4FNQWpYHFsxVRM64pNHJctdcpttakVS6bK1KeQjPHRXNZWuK8nsMPLXz5bJ1uByEEiitP7cof1kdilqaYO/nzD//UF/WOCPKO3vskAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;sc2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/8d26b9b8c26ff3d2923946f7c013d0fd/fcda8/sc2.png&quot;
+        srcset=&quot;/static/8d26b9b8c26ff3d2923946f7c013d0fd/12f09/sc2.png 148w,
+/static/8d26b9b8c26ff3d2923946f7c013d0fd/e4a3f/sc2.png 295w,
+/static/8d26b9b8c26ff3d2923946f7c013d0fd/fcda8/sc2.png 590w,
+/static/8d26b9b8c26ff3d2923946f7c013d0fd/f0551/sc2.png 862w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h3&gt;Goroutine&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Light-weight threads olarak geçer.&lt;/li&gt;
+&lt;li&gt;İşletim sistemi threadlerinden daha ucuzlardır. Stack boyutları threadlere göre daha düşüktür. Goroutinlerin boyutu 2KB’dır.&lt;/li&gt;
+&lt;li&gt;Go runtime tarafından yönetilir. (User thread gibi)&lt;/li&gt;
+&lt;li&gt;Therad’e göre daha az maliyetlidir. Context switch yaparken.&lt;/li&gt;
+&lt;li&gt;Channellar ile haberleşirler.&lt;/li&gt;
+&lt;li&gt;Kendi stack boyutlarını runtime’da küçültebilir aynı zamanda büyültebilirler.&lt;/li&gt;
+&lt;li&gt;Goroutineler işletim sistemi threadleri üzerinde çalışır(kernel).&lt;/li&gt;
+&lt;li&gt;Main goroutine default.&lt;/li&gt;
+&lt;li&gt;Goroutineler stack boyutlarını 64-bit’deki işlemcilerde 1GB kadar 32-bit’lerde 250MB kadar max büyütebilir. &lt;code class=&quot;language-text&quot;&gt;runtime.morestack&lt;/code&gt; daha fazla stack ihtiyacı varsa bu komut çalıştırılır.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Go Scheduler&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;GMP&lt;/li&gt;
+&lt;li&gt;Go runtime’a özeldir.&lt;/li&gt;
+&lt;li&gt;Birden fazla goroutine birden fazla thread üzerinde çalışabilir.&lt;code class=&quot;language-text&quot;&gt;schema-1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Görevi çalıştırmaya hazır goroutineleri threadler üzerinde çalıştırmaktır.(kernel thread).&lt;/li&gt;
+&lt;li&gt;Bir işletim sistemi thread’i mutlaka bir processor’e bağlı olmak zorundadır. Yoksa goroutinler o thread üzerinde çalışamaz.&lt;/li&gt;
+&lt;li&gt;Go runtime’ın bir parçasıdır. Go scheduler user seviyesinde çalışan yapılardır.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f04d107ed3039324725b019f003201f3/cc8d6/sc4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 62.16216216216216%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACuElEQVQoz2VTXUgUURidB4Neil6CIJCyyIx8CALDyjILAiF6KaS3KILytSAkejFKKOlPpLRWy938S7al9Ze0rEQT2Y31f9tcdV13HXfXXWdmd/5P9864pXThMN8wd879zjn3Y1KyiPdzHWj1O8GLAuhyRUbR6HdgkQsb75quQdf1/6AR0FXu9qJsZNKomYcTL3CgtRD7W0/i0dhLeCKTOOwsxsHmUyj5XgpeMg8hFFi/tLVnZ2AJGU9tyKisRzupmfvjVdhrPYo91nxQ8mHWjRx7IbItx1DcfxkRLgZFUqCoitGVLMsQRRGiJEGTRLgCi8i0dmJH/UeMRuNgZEWG7bcdjTMOrHBx6IqOjplePPbUYmxpCpqsgRd4cBxnQCJEiqIglUqB40n3hLQ/yOLbImtKZoUILL5m1HtbsCLEjW7aZ3tRM22DPza/QSYlo6SJRMLoMi37nS+AOq+5l7npvoeshnxkNeXj+VQdvoQGsa+tANnW47g4cMMISpZMmbSzdCBCMgWJW8VAOIKt1c3Y/MxG/o2AqRivRm5TEXLbTqOJyB5iXTjkOIuchhO4MngLfFKAIiumbwS0SwqReKkQKzq8fmyptWNbTRuGwlEwNDzn/Cd0L/RDFzWIqyl0T39GrceGEBtGkhMMD2kYuv4vaVonyQHQVbwhct/9WpM8vPQT13+UGXCFPIiSVMvdT3Bt6Dbss13GpnSyPM9DEAQDyWQSErGAru5AGHXTcyZh6cgd7LbkYdfbPNz1VKIn+BWZLXnIeVWAgr4LWOaiUGXVSJUiTUY9pNdmIprATovD8LAvuAzGOd+Loq4SnOm5ZASywIVwvu8qjjjO4cFoFVRFNadC0zYkrlL5mgoXG8P21x+wiRB20YtNPwb5MEIC+3dzLBXHVNyH9HCkvVs/duunpWUmiAqPz6j/APCOPBYp7QX+AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Schema1&quot;
+        title=&quot;&quot;
+        src=&quot;/static/f04d107ed3039324725b019f003201f3/fcda8/sc4.png&quot;
+        srcset=&quot;/static/f04d107ed3039324725b019f003201f3/12f09/sc4.png 148w,
+/static/f04d107ed3039324725b019f003201f3/e4a3f/sc4.png 295w,
+/static/f04d107ed3039324725b019f003201f3/fcda8/sc4.png 590w,
+/static/f04d107ed3039324725b019f003201f3/cc8d6/sc4.png 791w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;schema-1&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;go&quot;&gt;&lt;pre class=&quot;language-go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	fmt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Bu code çalışınca neler olur? Go scheduler nasıl haraket eder?&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2081dc091785ce92d82cb703381b36c1/bb2fd/sc3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 28.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVQY0z2QzStsYRzHn1ncErdk719QFGulEGV7uysLpbu9C3WlxIokhcTlWlngcr1cL0nK28LLSN4aitFY0FDGGDPOec5zXj7OOXPGU79+r31/v+cjHMAKzIu95zjZyAp8PJ1BmuZnL9d/d+tWRiHfdF7iCXRNR7yftWNftmFHWtHOO7C0J3/Ydmzfv+mSstUDOk9vgrpnWcHnVIKe8BA/tn4xGp5AGQrhTAuiI64NC+wZgRb7iyflWApDKb7vnBDqGafwzwJzd3FfSFmm/53ey9+UrNVQMV9P+WYDM7EVBP8Fh/15HA98gSVB+mYCw1M0JXfJFMWzWxR1jxAanKTl6MrlYCLdRUoqmsOtlC7WUtFXTelGHV3nQwjtn8Bc/oq9WoC2mI/xuJ3lZ1u+X449EJrapGr90L3YDNhmcew/HdOw20Tl9jca935yn44jjFQU+XKFTEZRmQc8PDnwOVZjkVsunpPBIn/gs5fUX4kkrt2rpZ9/AFhKm/055ON4AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;sc3&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2081dc091785ce92d82cb703381b36c1/fcda8/sc3.png&quot;
+        srcset=&quot;/static/2081dc091785ce92d82cb703381b36c1/12f09/sc3.png 148w,
+/static/2081dc091785ce92d82cb703381b36c1/e4a3f/sc3.png 295w,
+/static/2081dc091785ce92d82cb703381b36c1/fcda8/sc3.png 590w,
+/static/2081dc091785ce92d82cb703381b36c1/efc66/sc3.png 885w,
+/static/2081dc091785ce92d82cb703381b36c1/bb2fd/sc3.png 1058w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Runtime bir processor yaratıyor. (P)&lt;/li&gt;
+&lt;li&gt;Scheduler initialize oluyor ve bir işletim sistemi thread’i yaratıyor.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;runtime.main&lt;/code&gt;  çağırılıyor. Aslında main.main çağırılıyor. bizim main fonksiyonumuzu çağırır.&lt;/li&gt;
+&lt;li&gt;Bu bir main goroutine oluşturur.&lt;/li&gt;
+&lt;li&gt;P nin local queue’suna ekliyor. P’nin içerisinde bir goroutine sırası var ve main goroutine oraya pushlanıyor.&lt;/li&gt;
+&lt;li&gt;İşletim sistemi thread’imiz processor’e bağlanıyor. P’nin içerisindeki goroutine’ni çalıştırmak için gerekli bigileri alıyor.&lt;/li&gt;
+&lt;li&gt;Goroutine işletim sistemi thread’ine bağlanıyor.&lt;/li&gt;
+&lt;li&gt;İşlemini gerçekleştiriyor. Code çalışır ve bitiyor her hangi bir duruma bağlı olarak (exit, panic, defer). sonrasında &lt;code class=&quot;language-text&quot;&gt;runtime.exit&lt;/code&gt; çağırılıyor.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Node-JS Asynchronous and Single-threaded [NOTE]]]></title><description><![CDATA[Blocking and Non-Blocking with Node.JS Blocking methods execute synchronously and non-blocking methods execute asynchronously. Example…]]></description><link>https://burkaydurdu.github.io/nodejs-async/</link><guid isPermaLink="false">https://burkaydurdu.github.io/nodejs-async/</guid><pubDate>Sun, 27 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Blocking and Non-Blocking with Node.JS&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Blocking&lt;/strong&gt; methods execute synchronously and &lt;strong&gt;non-blocking&lt;/strong&gt; methods execute asynchronously.&lt;/p&gt;
