@@ -1,190 +1,212 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Burkay Durdu Blog]]></title><description><![CDATA[It is my blog site]]></description><link>https://burkaydurdu.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 31 Mar 2022 20:29:21 GMT</lastBuildDate><item><title><![CDATA[Goroutine & Go Scheduler]]></title><description><![CDATA[Rob Pike, Robert Griesemer ve Ken Thompson tarafından tasarlanmis. Açık kaynak kodlu ve  tipli bir programlama dilidir. 25 anahtar Sözcük…]]></description><link>https://burkaydurdu.github.io/goroutine-goscheduler/</link><guid isPermaLink="false">https://burkaydurdu.github.io/goroutine-goscheduler/</guid><pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[It is my blog site]]></description><link>https://burkaydurdu.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 29 Jul 2023 23:21:04 GMT</lastBuildDate><item><title><![CDATA[Generic Types in Golang]]></title><description><![CDATA[Generic Types in Golang Golang, also known as Go, is a statically typed programming language that was developed at Google. It has quickly…]]></description><link>https://burkaydurdu.github.io/go-generic-types/</link><guid isPermaLink="false">https://burkaydurdu.github.io/go-generic-types/</guid><pubDate>Sun, 19 Mar 2023 22:12:03 GMT</pubDate><content:encoded>&lt;h1&gt;Generic Types in Golang&lt;/h1&gt;
+&lt;p&gt;Golang, also known as Go, is a statically typed programming language that was developed at Google. It has quickly gained popularity among developers due to its simplicity, efficiency, and concurrency support. One of the key features of Golang is its support for Generic Types.&lt;/p&gt;
+&lt;p&gt;Generic Types in Golang allow the creation of functions and data structures that can work with different types of data, without having to rewrite the code for each new data type. This feature greatly reduces the amount of code that needs to be written, making it easier to maintain and extend applications over time.&lt;/p&gt;
+&lt;h3&gt;Benefits of using Generic Types in Golang&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Code Reusability&lt;/strong&gt;: With Generic Types, you can write a single function or data structure that works with multiple types of data. This reduces code duplication and makes it easier to maintain the codebase over time.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flexibility&lt;/strong&gt;: Generic Types make it easier to write reusable code that can be used in different contexts. This allows developers to write more generic libraries and tools that can be used by other developers in a variety of projects.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Type Safety&lt;/strong&gt;: Despite being generic, Golang&apos;s Generic Types still enforce strong type safety, ensuring that data types are properly handled and processed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Comparison with other programming languages&lt;/h3&gt;
+&lt;p&gt;While Golang&apos;s support for Generic Types is relatively new, many other programming languages have supported Generic Types for years. Java, C++, and C# are just a few examples of languages that have long supported Generic Types. However, Golang&apos;s implementation of Generic Types is unique in its simplicity and ease of use.&lt;/p&gt;
+&lt;h2&gt;How to Define Generic Types in Golang&lt;/h2&gt;
+&lt;h3&gt;Syntax for defining a generic function or type&lt;/h3&gt;
+&lt;p&gt;In Golang, Generic Types are defined using type parameters. Type parameters are placeholders for actual types that will be used when the function or type is instantiated. Here&apos;s an example of a generic function that takes a slice of any type and returns the first element of that slice:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;go&quot;&gt;&lt;pre class=&quot;language-go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;func&lt;/span&gt; firstElement&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;T any&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;slice &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;T&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; T &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; slice&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In this example, the type parameter &lt;code class=&quot;language-text&quot;&gt;T&lt;/code&gt; is used as a placeholder for the actual type that will be used when the function is called. The &lt;code class=&quot;language-text&quot;&gt;any&lt;/code&gt; keyword indicates that any type can be used for &lt;code class=&quot;language-text&quot;&gt;T&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Examples of generic types and functions in Golang&lt;/h3&gt;
+&lt;p&gt;Here are some examples of Generic Types and Functions in Golang:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Slice&lt;/strong&gt;: The &lt;code class=&quot;language-text&quot;&gt;[]T&lt;/code&gt; syntax is a generic slice type that can hold any type &lt;code class=&quot;language-text&quot;&gt;T&lt;/code&gt;. For example, &lt;code class=&quot;language-text&quot;&gt;[]int&lt;/code&gt; is a slice of integers, while &lt;code class=&quot;language-text&quot;&gt;[]string&lt;/code&gt; is a slice of strings.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Map&lt;/strong&gt;: The &lt;code class=&quot;language-text&quot;&gt;map[K]V&lt;/code&gt; syntax is a generic map type that can hold any key type &lt;code class=&quot;language-text&quot;&gt;K&lt;/code&gt; and value type &lt;code class=&quot;language-text&quot;&gt;V&lt;/code&gt;. For example, &lt;code class=&quot;language-text&quot;&gt;map[string]int&lt;/code&gt; is a map with string keys and integer values.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sorting&lt;/strong&gt;: The &lt;code class=&quot;language-text&quot;&gt;sort&lt;/code&gt; package in Golang provides generic functions for sorting slices of any type &lt;code class=&quot;language-text&quot;&gt;T&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Constraints in Generic Types&lt;/h2&gt;
+&lt;h3&gt;Explanation of constraints and why they are necessary&lt;/h3&gt;
+&lt;p&gt;Constraints are rules that specify the types of data that can be used with a generic type or function. Constraints are necessary to ensure type safety and prevent runtime errors.&lt;/p&gt;
+&lt;h3&gt;Syntax for defining constraints on a generic type&lt;/h3&gt;
+&lt;p&gt;Here&apos;s an example of a generic function that takes a slice of any type &lt;code class=&quot;language-text&quot;&gt;T&lt;/code&gt; and returns the first element of that slice, but only if that type &lt;code class=&quot;language-text&quot;&gt;T&lt;/code&gt; is a string:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;go&quot;&gt;&lt;pre class=&quot;language-go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;func&lt;/span&gt; firstStringElement&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;T &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;slice &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;T&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; T &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;slice&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; slice&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Goroutine & Go Scheduler]]></title><description><![CDATA[Rob Pike, Robert Griesemer ve Ken Thompson tarafından tasarlanmis. Açık kaynak kodlu ve  tipli bir programlama dilidir. 25 anahtar Sözcük…]]></description><link>https://burkaydurdu.github.io/goroutine-goscheduler/</link><guid isPermaLink="false">https://burkaydurdu.github.io/goroutine-goscheduler/</guid><pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Rob Pike&lt;/strong&gt;, &lt;strong&gt;Robert Griesemer&lt;/strong&gt; ve &lt;strong&gt;Ken Thompson&lt;/strong&gt; tarafından tasarlanmis.&lt;/li&gt;
 &lt;li&gt;Açık kaynak kodlu ve &lt;code class=&quot;language-text&quot;&gt;statik&lt;/code&gt; tipli bir programlama dilidir.&lt;/li&gt;
 &lt;li&gt;25 anahtar Sözcük (keyword)&lt;/li&gt;
 &lt;li&gt;Derlenen bir dildir.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5&gt;Thread (Tek CPU Kernel)&lt;/h5&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/f8a0a930fb1bdd862acb199bec086a45/5205c/sc1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 17.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVQY0yWQwUrDQBRF+2fuBX/Er3DpQgVXunGn4NaltIqFCuqmxaIU2sam7bS0HdLMJGYynUmOSX1wFu/yuBxeI9gqgkgxlBGbNMPnCqtGWD1h5wzOO2y6JI8G5ImodsuuJlvjkhCXbfC+wFqLc45GczzlaSLorCN60qCDB9TLIfHbMdiCerLhLbp9hO6eQB2VkH6eoVoHxP0LcgeLhUAI8V/YCma8Sk2vKs2NwVQXcbKl/XPN4/CUYNPF7UCqNc/BJc3ROVP5hTWOLPvd283nc8IwpDGQW2r6K8lSJ5RFQVmWGJvyMbunHVwh4u+9aWIi3qd3dCY3rPR4n9Uv8d5japGKP6xhJk9wip/7AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 17.72151898734177%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAABB0lEQVR42iWPzUrDQBSF+2xu3fgwPoEgiLhw50JwJdI3EAoRwQpiN1JLK01a0qaJ0PwxU9NMMtP5nLYH7uIe7j0/nXkpmRWCaVaSVQpT5zTlmFYEaK3QRtPIBSobouTS7S2t49u/GC189HaNMRalHNe2dHrBgpflL/205DtXbPwu8vUUMTjHumcLVD93bN7OkMMr9rBmx+brAuGdICb3NBqSeEWSJEdBL4zpZ5JRWtCoBtVYcpnizW95nl6yyMe4oKxFQi+4dnNDXATu1lKr+pAuiiLCMKTjlwLfVZ44sbTaOvsd1sWqlGCw6vIePrCWs0MyuU35jJ74WD5SuMp7GOdkjKGuj8L/j70mgGJWDDkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;sc1&quot;
         title=&quot;&quot;
-        src=&quot;/static/f8a0a930fb1bdd862acb199bec086a45/fcda8/sc1.png&quot;
-        srcset=&quot;/static/f8a0a930fb1bdd862acb199bec086a45/12f09/sc1.png 148w,
-/static/f8a0a930fb1bdd862acb199bec086a45/e4a3f/sc1.png 295w,
-/static/f8a0a930fb1bdd862acb199bec086a45/fcda8/sc1.png 590w,
+        src=&quot;/static/f8a0a930fb1bdd862acb199bec086a45/f058b/sc1.png&quot;
+        srcset=&quot;/static/f8a0a930fb1bdd862acb199bec086a45/c26ae/sc1.png 158w,
+/static/f8a0a930fb1bdd862acb199bec086a45/6bdcf/sc1.png 315w,
+/static/f8a0a930fb1bdd862acb199bec086a45/f058b/sc1.png 630w,
 /static/f8a0a930fb1bdd862acb199bec086a45/5205c/sc1.png 833w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h5&gt;Thread (Multi CPU kernel)&lt;/h5&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/8d26b9b8c26ff3d2923946f7c013d0fd/f0551/sc2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 35.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABKUlEQVQoz6XRy0sCURTH8fnLI42iRe+gvyF6bcqkNhYlFC1K0hEfqDOh47ydueM4OU3fbkItJNp44MOPszmcc69ihIK649Pyg1lq/ohFSqmYLrdDj2KjQ6lv8WAK4n6JsJInrG5ImwTVLWlb2iGs7RKq+wh1j0A9IBn7iCjGcWym0ylK2xvxZHmUtT6PQ4eqG/HuVkh6hyT6GYl2wuTXsex/HMn+lCQO5MAxtm2RpimKmEwYBCHWOJYp8KNosZPrtse94XD3ZlCWG76YHnHi4UY9vEifo83R+chSsiybbfedyqsceGO4FNQWpYHFsxVRM64pNHJctdcpttakVS6bK1KeQjPHRXNZWuK8nsMPLXz5bJ1uByEEiitP7cof1kdilqaYO/nzD//UF/WOCPKO3vskAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 36.075949367088604%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABMElEQVR42qWRy0vDQBDG84/7oB78C/Qgvj14bysiFPQg2HoQWgpNX2jFJE3TNLvdh0nz+JxuECoeO/Dj213YmflmrJmQGC043rkw6pBuE1ZnFuLJC3HfH+PR8dHyOeLpC5R9BDU4gxyuuSAuIUdXxDXU+AaakONbJN9LSKXBOUOaprAGC4ZWwPD86aLph2iHCrFPCfvHUJRMDU//oQ0nVOQcseYQUsHzvDKh0BrOIoJP1p2IgSm1neV+WHbYdAO8knaCCEkqoJIAOplDr34J6R6WukGWpaazOI7pnMFq0wwbToBq10bja4o3X6LrPqDa26O5HuLOPkDdUCH2UaP3mr1L7KDeq4CJOVjEMZl8QAgBa0b+h2bL5bbdpURRFMjznMgMWZ5usPoDUBir6z/r+AFuswmT4zlVLgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;sc2&quot;
         title=&quot;&quot;
-        src=&quot;/static/8d26b9b8c26ff3d2923946f7c013d0fd/fcda8/sc2.png&quot;
-        srcset=&quot;/static/8d26b9b8c26ff3d2923946f7c013d0fd/12f09/sc2.png 148w,
-/static/8d26b9b8c26ff3d2923946f7c013d0fd/e4a3f/sc2.png 295w,
-/static/8d26b9b8c26ff3d2923946f7c013d0fd/fcda8/sc2.png 590w,
+        src=&quot;/static/8d26b9b8c26ff3d2923946f7c013d0fd/f058b/sc2.png&quot;
+        srcset=&quot;/static/8d26b9b8c26ff3d2923946f7c013d0fd/c26ae/sc2.png 158w,
+/static/8d26b9b8c26ff3d2923946f7c013d0fd/6bdcf/sc2.png 315w,
+/static/8d26b9b8c26ff3d2923946f7c013d0fd/f058b/sc2.png 630w,
 /static/8d26b9b8c26ff3d2923946f7c013d0fd/f0551/sc2.png 862w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h3&gt;Goroutine&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Light-weight threads olarak geçer.&lt;/li&gt;
-&lt;li&gt;İşletim sistemi threadlerinden daha ucuzlardır. Stack boyutları threadlere göre daha düşüktür. Goroutinlerin boyutu 2KB’dır.&lt;/li&gt;
+&lt;li&gt;İşletim sistemi threadlerinden daha ucuzlardır. Stack boyutları threadlere göre daha düşüktür. Goroutinlerin boyutu 2KB&apos;dır.&lt;/li&gt;
 &lt;li&gt;Go runtime tarafından yönetilir. (User thread gibi)&lt;/li&gt;
-&lt;li&gt;Therad’e göre daha az maliyetlidir. Context switch yaparken.&lt;/li&gt;
+&lt;li&gt;Therad&apos;e göre daha az maliyetlidir. Context switch yaparken.&lt;/li&gt;
 &lt;li&gt;Channellar ile haberleşirler.&lt;/li&gt;
-&lt;li&gt;Kendi stack boyutlarını runtime’da küçültebilir aynı zamanda büyültebilirler.&lt;/li&gt;
+&lt;li&gt;Kendi stack boyutlarını runtime&apos;da küçültebilir aynı zamanda büyültebilirler.&lt;/li&gt;
 &lt;li&gt;Goroutineler işletim sistemi threadleri üzerinde çalışır(kernel).&lt;/li&gt;
 &lt;li&gt;Main goroutine default.&lt;/li&gt;
-&lt;li&gt;Goroutineler stack boyutlarını 64-bit’deki işlemcilerde 1GB kadar 32-bit’lerde 250MB kadar max büyütebilir. &lt;code class=&quot;language-text&quot;&gt;runtime.morestack&lt;/code&gt; daha fazla stack ihtiyacı varsa bu komut çalıştırılır.&lt;/li&gt;
+&lt;li&gt;Goroutineler stack boyutlarını 64-bit&apos;deki işlemcilerde 1GB kadar 32-bit&apos;lerde 250MB kadar max büyütebilir. &lt;code class=&quot;language-text&quot;&gt;runtime.morestack&lt;/code&gt; daha fazla stack ihtiyacı varsa bu komut çalıştırılır.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Go Scheduler&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;GMP&lt;/li&gt;
-&lt;li&gt;Go runtime’a özeldir.&lt;/li&gt;
+&lt;li&gt;Go runtime&apos;a özeldir.&lt;/li&gt;
 &lt;li&gt;Birden fazla goroutine birden fazla thread üzerinde çalışabilir.&lt;code class=&quot;language-text&quot;&gt;schema-1&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Görevi çalıştırmaya hazır goroutineleri threadler üzerinde çalıştırmaktır.(kernel thread).&lt;/li&gt;
-&lt;li&gt;Bir işletim sistemi thread’i mutlaka bir processor’e bağlı olmak zorundadır. Yoksa goroutinler o thread üzerinde çalışamaz.&lt;/li&gt;
-&lt;li&gt;Go runtime’ın bir parçasıdır. Go scheduler user seviyesinde çalışan yapılardır.&lt;/li&gt;
+&lt;li&gt;Bir işletim sistemi thread&apos;i mutlaka bir processor&apos;e bağlı olmak zorundadır. Yoksa goroutinler o thread üzerinde çalışamaz.&lt;/li&gt;
+&lt;li&gt;Go runtime&apos;ın bir parçasıdır. Go scheduler user seviyesinde çalışan yapılardır.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/f04d107ed3039324725b019f003201f3/cc8d6/sc4.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 62.16216216216216%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACuElEQVQoz2VTXUgUURidB4Neil6CIJCyyIx8CALDyjILAiF6KaS3KILytSAkejFKKOlPpLRWy938S7al9Ze0rEQT2Y31f9tcdV13HXfXXWdmd/5P9864pXThMN8wd879zjn3Y1KyiPdzHWj1O8GLAuhyRUbR6HdgkQsb75quQdf1/6AR0FXu9qJsZNKomYcTL3CgtRD7W0/i0dhLeCKTOOwsxsHmUyj5XgpeMg8hFFi/tLVnZ2AJGU9tyKisRzupmfvjVdhrPYo91nxQ8mHWjRx7IbItx1DcfxkRLgZFUqCoitGVLMsQRRGiJEGTRLgCi8i0dmJH/UeMRuNgZEWG7bcdjTMOrHBx6IqOjplePPbUYmxpCpqsgRd4cBxnQCJEiqIglUqB40n3hLQ/yOLbImtKZoUILL5m1HtbsCLEjW7aZ3tRM22DPza/QSYlo6SJRMLoMi37nS+AOq+5l7npvoeshnxkNeXj+VQdvoQGsa+tANnW47g4cMMISpZMmbSzdCBCMgWJW8VAOIKt1c3Y/MxG/o2AqRivRm5TEXLbTqOJyB5iXTjkOIuchhO4MngLfFKAIiumbwS0SwqReKkQKzq8fmyptWNbTRuGwlEwNDzn/Cd0L/RDFzWIqyl0T39GrceGEBtGkhMMD2kYuv4vaVonyQHQVbwhct/9WpM8vPQT13+UGXCFPIiSVMvdT3Bt6Dbss13GpnSyPM9DEAQDyWQSErGAru5AGHXTcyZh6cgd7LbkYdfbPNz1VKIn+BWZLXnIeVWAgr4LWOaiUGXVSJUiTUY9pNdmIprATovD8LAvuAzGOd+Loq4SnOm5ZASywIVwvu8qjjjO4cFoFVRFNadC0zYkrlL5mgoXG8P21x+wiRB20YtNPwb5MEIC+3dzLBXHVNyH9HCkvVs/duunpWUmiAqPz6j/APCOPBYp7QX+AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.0253164556962%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACuUlEQVR42m1TX0hTURy+FL310EuvFWXUMCWI/kCaKQoR+CIW9NqDFEQvYRARvmQPgqXtJdO2bOUaDmXpUoeUM4klzbKmW7a1zW1utb/O+//e7eucuyaBnns/zu/ec+/H933n/BhJkTEZm4E1ZEeWy4EOX9YPa9iO8HpUey6Sa7tRKJbeP/GGcOvTslYzBr8F1SNNqBxuQMfiQwTXV1HvuIyq4Ua0ONuQFjIl0mJxWzJ3Koc9fVYwXQaYAzEwvT4DDptrUGE6i9tfH+B7yovqsSboDOdQO92KcDYCqOQuqFBVFYqiaBAlCSrBUiyOo+Yp7O4fwUwsCUaQRViCYzAGhhHLJcifRThWneheeoqP0c9QRQUsxyGfz4MjsyiKm+B4HhAFzK0lYQuulSznpQ28DIxi4McQkhspFJUi3oXnoPcYEciENjOklqkylmU1ckEQiOqCtj6xmkCft/Qtc9+jxxFzLSqI7U5SLyQ9OD5+AZWv6tHsvIo0l0FBKUAgSmRZ1ogLhEiUZEgci+V0DvuMNux8ZMJYOAGmx/cMxywN0FnOQ+97jm8kwxPjF6Ez1aFltg1/1pOEkGSnKpBIZtSqNhMoJILZYAR7jW+wS28mhHEwNOiJ6HuMhCfBCTwkVsT0yiz0XwwIxH8RFSLJkNUs/r/TVCVPyKHKGPJH0OsJlCz7Mn60L3Tixvw9uKJu8CTox0sGXHfdhTVopwFqViUCmh9dL0MmmdLhSqQx4AuXCO8sduHA4GkcNJ7BTXcHXL/dODRaA13/OZx0NCP079jQDKlKutMUPKkVonBtg0PV6yns6DHBFiKWp2Mf0Oi4grrJVtItb5HiM7jkvIZTtmZNOS8Jmxa3HGxyNlcyOew32cF0D+LFzwgYuhhl4wjmIyh3WFrIYjG9DEERtrQbzbGcZblbqLL2ea9W/wWDoTwmZMmTiQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Schema1&quot;
         title=&quot;&quot;
-        src=&quot;/static/f04d107ed3039324725b019f003201f3/fcda8/sc4.png&quot;
-        srcset=&quot;/static/f04d107ed3039324725b019f003201f3/12f09/sc4.png 148w,
-/static/f04d107ed3039324725b019f003201f3/e4a3f/sc4.png 295w,
-/static/f04d107ed3039324725b019f003201f3/fcda8/sc4.png 590w,
+        src=&quot;/static/f04d107ed3039324725b019f003201f3/f058b/sc4.png&quot;
+        srcset=&quot;/static/f04d107ed3039324725b019f003201f3/c26ae/sc4.png 158w,
+/static/f04d107ed3039324725b019f003201f3/6bdcf/sc4.png 315w,
+/static/f04d107ed3039324725b019f003201f3/f058b/sc4.png 630w,
 /static/f04d107ed3039324725b019f003201f3/cc8d6/sc4.png 791w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;schema-1&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;go&quot;&gt;&lt;pre class=&quot;language-go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 	fmt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Bu code çalışınca neler olur? Go scheduler nasıl haraket eder?&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/2081dc091785ce92d82cb703381b36c1/bb2fd/sc3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 28.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVQY0z2QzStsYRzHn1ncErdk719QFGulEGV7uysLpbu9C3WlxIokhcTlWlngcr1cL0nK28LLSN4aitFY0FDGGDPOec5zXj7OOXPGU79+r31/v+cjHMAKzIu95zjZyAp8PJ1BmuZnL9d/d+tWRiHfdF7iCXRNR7yftWNftmFHWtHOO7C0J3/Ydmzfv+mSstUDOk9vgrpnWcHnVIKe8BA/tn4xGp5AGQrhTAuiI64NC+wZgRb7iyflWApDKb7vnBDqGafwzwJzd3FfSFmm/53ey9+UrNVQMV9P+WYDM7EVBP8Fh/15HA98gSVB+mYCw1M0JXfJFMWzWxR1jxAanKTl6MrlYCLdRUoqmsOtlC7WUtFXTelGHV3nQwjtn8Bc/oq9WoC2mI/xuJ3lZ1u+X449EJrapGr90L3YDNhmcew/HdOw20Tl9jca935yn44jjFQU+XKFTEZRmQc8PDnwOVZjkVsunpPBIn/gs5fUX4kkrt2rpZ9/AFhKm/055ON4AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 28.48101265822785%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaElEQVR42m2RyyuEURjGj6SslCT/gK3YsLdwKWVL2bG0ULJDliRKKZeFrNxyKWTEpHHJtch9Y/omBuUyw4xvvvnuP8c3XzY8dXrfek+/8zzvES5gy+PwV46bqcpnkpRp/ZmrSRVd1VE/Vd6fXjEMHZE6a8e+6cC+akO77MbW4z7M9WFfFK8cMHit/D7i+rP7WJSeowFaQh1MnE5jmiaCOcHtcA6RMYGzKEg/BjNuHYtEWqd684Ts3nEKJldZj754IMuxvVidl/2UrFVRvlRHRaiejccdCVwW7A/mcjOSDSsC9T6A4e3B5PotTuFMkILeUbJG5um7CEt7NoaMn9JSNB23UbZQQ/lQNaVbtUzezSE06coK5GMH8tBWizBj554L+8eF1Gw4ipjaoiF0hus4fuxM3X4+pH6vmcrdRlpPuoilPxBmMoKRUNCTD1jaO+4/nzNxq6AkvrzeX5+8l2niEhL+iGDKRD/6Bi68nK9yUIQdAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;sc3&quot;
         title=&quot;&quot;
-        src=&quot;/static/2081dc091785ce92d82cb703381b36c1/fcda8/sc3.png&quot;
-        srcset=&quot;/static/2081dc091785ce92d82cb703381b36c1/12f09/sc3.png 148w,
-/static/2081dc091785ce92d82cb703381b36c1/e4a3f/sc3.png 295w,
-/static/2081dc091785ce92d82cb703381b36c1/fcda8/sc3.png 590w,
-/static/2081dc091785ce92d82cb703381b36c1/efc66/sc3.png 885w,
+        src=&quot;/static/2081dc091785ce92d82cb703381b36c1/f058b/sc3.png&quot;
+        srcset=&quot;/static/2081dc091785ce92d82cb703381b36c1/c26ae/sc3.png 158w,
+/static/2081dc091785ce92d82cb703381b36c1/6bdcf/sc3.png 315w,
+/static/2081dc091785ce92d82cb703381b36c1/f058b/sc3.png 630w,
+/static/2081dc091785ce92d82cb703381b36c1/40601/sc3.png 945w,
 /static/2081dc091785ce92d82cb703381b36c1/bb2fd/sc3.png 1058w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Runtime bir processor yaratıyor. (P)&lt;/li&gt;
-&lt;li&gt;Scheduler initialize oluyor ve bir işletim sistemi thread’i yaratıyor.&lt;/li&gt;
+&lt;li&gt;Scheduler initialize oluyor ve bir işletim sistemi thread&apos;i yaratıyor.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;runtime.main&lt;/code&gt;  çağırılıyor. Aslında main.main çağırılıyor. bizim main fonksiyonumuzu çağırır.&lt;/li&gt;
 &lt;li&gt;Bu bir main goroutine oluşturur.&lt;/li&gt;
-&lt;li&gt;P nin local queue’suna ekliyor. P’nin içerisinde bir goroutine sırası var ve main goroutine oraya pushlanıyor.&lt;/li&gt;
-&lt;li&gt;İşletim sistemi thread’imiz processor’e bağlanıyor. P’nin içerisindeki goroutine’ni çalıştırmak için gerekli bigileri alıyor.&lt;/li&gt;
-&lt;li&gt;Goroutine işletim sistemi thread’ine bağlanıyor.&lt;/li&gt;
+&lt;li&gt;P nin local queue&apos;suna ekliyor. P&apos;nin içerisinde bir goroutine sırası var ve main goroutine oraya pushlanıyor.&lt;/li&gt;
+&lt;li&gt;İşletim sistemi thread&apos;imiz processor&apos;e bağlanıyor. P&apos;nin içerisindeki goroutine&apos;ni çalıştırmak için gerekli bigileri alıyor.&lt;/li&gt;
+&lt;li&gt;Goroutine işletim sistemi thread&apos;ine bağlanıyor.&lt;/li&gt;
 &lt;li&gt;İşlemini gerçekleştiriyor. Code çalışır ve bitiyor her hangi bir duruma bağlı olarak (exit, panic, defer). sonrasında &lt;code class=&quot;language-text&quot;&gt;runtime.exit&lt;/code&gt; çağırılıyor.&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Node-JS Asynchronous and Single-threaded [NOTE]]]></title><description><![CDATA[Blocking and Non-Blocking with Node.JS Blocking methods execute synchronously and non-blocking methods execute asynchronously. Example…]]></description><link>https://burkaydurdu.github.io/nodejs-async/</link><guid isPermaLink="false">https://burkaydurdu.github.io/nodejs-async/</guid><pubDate>Sun, 27 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Blocking and Non-Blocking with Node.JS&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Blocking&lt;/strong&gt; methods execute synchronously and &lt;strong&gt;non-blocking&lt;/strong&gt; methods execute asynchronously.&lt;/p&gt;
+&lt;li&gt;&lt;strong&gt;Blocking&lt;/strong&gt; methods execute synchronously and &lt;strong&gt;non-blocking&lt;/strong&gt; methods execute asynchronously.
 &lt;ul&gt;
-&lt;li&gt;Example:&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;
+&lt;p&gt;Example:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt; &lt;span class=&quot;token comment&quot;&gt;// This is a synchronous file read.&lt;/span&gt;
  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; fs &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;fs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;readFileSync&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/file.md&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// blocks here until file is read&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -205,21 +227,25 @@
  &lt;span class=&quot;token function&quot;&gt;moreWork&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// will run before console.log&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Single Thread&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Javascript execution in Node.js is single threaded, so concurrency refers to the event loop’s capacity to execute JavaScript callback functions after completing other work.&lt;/li&gt;
+&lt;li&gt;Javascript execution in Node.js is single threaded, so concurrency refers to the event loop&apos;s capacity to execute JavaScript callback functions after completing other work.&lt;/li&gt;
 &lt;li&gt;JavaScript is an interpreted language, not a compiled one.&lt;/li&gt;
 &lt;li&gt;There are several types of interpreters (known as engines). The most popular browser engines are V8 (Chrome), Quantum (Firefox) and WebKit (Safari).&lt;/li&gt;
 &lt;li&gt;A single-thread language is one with a single call stack and a single memory heap. It means that it runs only one thing at a time.&lt;/li&gt;
 &lt;li&gt;A &lt;code class=&quot;language-text&quot;&gt;stack&lt;/code&gt; is a continuous region of memory, allocating local context for each executed function.&lt;/li&gt;
 &lt;li&gt;A &lt;code class=&quot;language-text&quot;&gt;heap&lt;/code&gt; is a much larger region, storing everything allocated dynamically.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;/0bc34eeeb758c7fc7d0299731b2da116/stack.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./stack.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;As you can see, the functions are added to the stack, executed and later deleted. It’s the so-called LIFO way - Last In, First Out. Each entry in the call stack is called a &lt;code class=&quot;language-text&quot;&gt;stack frame&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;However, JS can also be non-blocking and behave as if it were multi-threaded. It means that it doesn’t wait for the response of an API call, I/O events, etc., and can continue the code execution. It is possible thanks to the JS engines which use (under the hood) real multi-threading languages, like C++ (Chrome) or Rust (Firefox). They provide us with the Web API under the browser hoods or ex. I/O API under Node.js.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/7acbc9fd44aaf885ddb4e3488cc26488/callback-queue.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, the functions are added to the stack, executed and later deleted. It&apos;s the so-called LIFO way - Last In, First Out. Each entry in the call stack is called a &lt;code class=&quot;language-text&quot;&gt;stack frame&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;However, JS can also be non-blocking and behave as if it were multi-threaded. It means that it doesn&apos;t wait for the response of an API call, I/O events, etc., and can continue the code execution. It is possible thanks to the JS engines which use (under the hood) real multi-threading languages, like C++ (Chrome) or Rust (Firefox). They provide us with the Web API under the browser hoods or ex. I/O API under Node.js.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./callback-queue.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Note&lt;/h3&gt;
@@ -230,64 +256,56 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&quot;https://thecodest.co/blog/asynchronous-and-single-threaded-javascript-meet-the-event-loop&quot;&gt;thecodes.com&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Clojure]]></title><description><![CDATA[Clojure nedir? Clojure, Lisp diyalekti olup fonksiyonel bir programlama dilidir. JVM (JAVA Virtual Machine) tabanlı uygulamalar…]]></description><link>https://burkaydurdu.github.io/clojure/</link><guid isPermaLink="false">https://burkaydurdu.github.io/clojure/</guid><pubDate>Sat, 03 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Clojure nedir?&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Clojure&lt;/strong&gt;, &lt;strong&gt;Lisp&lt;/strong&gt; diyalekti olup fonksiyonel bir programlama dilidir. &lt;strong&gt;JVM&lt;/strong&gt; (&lt;em&gt;JAVA Virtual Machine&lt;/em&gt;) tabanlı uygulamalar geliştirebilir ayrıca &lt;strong&gt;Clojure-Script&lt;/strong&gt; ile &lt;strong&gt;Web&lt;/strong&gt; tabanlı uygulamalar oluşturabilirsiniz. Clojure’un güzel özelliklerinde biri de JVM tabanlı olduğu için &lt;strong&gt;JAVA&lt;/strong&gt; kütüphanelerine erişim imkânı sağlıyor. Bu sayede zengin bir geliştirme havuzu karşılıyor bizleri.&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;strong&gt;Clojure&lt;/strong&gt;, &lt;strong&gt;Lisp&lt;/strong&gt; diyalekti olup fonksiyonel bir programlama dilidir. &lt;strong&gt;JVM&lt;/strong&gt; (&lt;em&gt;JAVA Virtual Machine&lt;/em&gt;) tabanlı uygulamalar geliştirebilir ayrıca &lt;strong&gt;Clojure-Script&lt;/strong&gt; ile &lt;strong&gt;Web&lt;/strong&gt; tabanlı uygulamalar oluşturabilirsiniz. Clojure&apos;un güzel özelliklerinde biri de JVM tabanlı olduğu için &lt;strong&gt;JAVA&lt;/strong&gt; kütüphanelerine erişim imkânı sağlıyor. Bu sayede zengin bir geliştirme havuzu karşılıyor bizleri.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 320px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/3f6b9822d26df54902705c24ed8bb6fa/72799/clojure_logo.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 320px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEfElEQVQ4y21VbU+TVxguX/kB+7Tsw+bmXpz6RZK9J9unOV+mTgFRqlu2xGmyZVvC20BUYOI2gzh1otvisi0yoEUsb4JRNBgtFdikL9BC2wltKWApbZ/SnnPua+c8g+oSm1w9d89znqv3fV/Xcz8GAAYFxkmtWUu/syWMEqY0E/54kjOFFBP/qL2la9lLZ7P4f/fqWA6y3JPacpwnMT7giuHMpQC+PDWBvUfHdHwh49OtAVidC/IITcivfHWPL5jMJJNhXkKdN5hExU8+bCqxM4XtFU6x46CTFGRMG4vtbKPcr/jZB3VW3bNMygUZDDGNLZdZN+CKYle1g28tH+F5h5y0udROkpS2lTsknLSh2K6vBUdcal+ecfFhdzxDqrLMlBlPpmF1aHw+CiHSwIg3Tg2XA/TntTBsowsYkGV23p5FSYNXkjlo5xEXPpDZ51Y6+URAzzRPL1mQyCYS42onKWb4nak2XPc1kuyR2kIiBXQOAd3DwLAPiGqEy/2zUJkq0k2ldl4uW0REiiPbwERaKYY+n4l9anmDtlx8kkz2M/Al7uJy4DDiKQ2/XgOONHHUtAic7iLMySott2YlmYN2Vbn0vt62K6FgVOWa7OHbKGh5nuU3r6CqvkKKsxmc8+ai0r4atuh5+ELAsUsMJzsIx1oFTnUSFjSg7JyXtsr+KpF+MAUUoUkR+mtvfoTdphcpv/lZ6vU0YnihBTWuHJzwvIuz3i2YTgRx7grwfRvXSauaBYa8sg3WOSihth90is/qx7GYFn5DLDXP9llexd7WtVRoXkVDgevoClejdvQ11EvC4+53EE450GEDjpo56tsJtWaBjkFgcCymhNEtZawZRTTBmCGeirL97a9LwjVkNL9MQ8E+dE1X49vRN/Hd2FswT32NqHDDNqHJciEJhU7YvkSovLmj0kmFijAuCVN80V/a+z72mFdTbtPTdNXThKFoE2qc63DSsx6e2C00T32OYCyIBll2nUWgWpY8KEvuGZjThVH2+er0BKSx/boo5++WQ/aPFZpe0kWJsbAs9W1YAofgTVgleQ78yRu4OwZUNqZ1pecTgLQLvVdkp/VFI6xveD4jitE21SsJV7BP2nJoZ/Nz1OO5iEBqCPe1YVydPoGykWfQeP8AtPQiLlkFvGGBLmsYm8vu0YE6N10ZiDDFJr2o20Y3dvUNIyQZ/7htHYxSnG73b7qxvVo/2kJlsIQqoFEYy5+5B6BoVA85INQ6nkrz7Myj54s48GHrWi57KRSpyvTw9QK6Ot6Ie6F+3JvuR6f7Ao7f2k+/DB6iXu8FtLt/FL///Q1/oM08fPQemYF1f4VuKvvwnc0ruSq/0LSK8qTZlWAK6k92tbwg15W08Y8n+LbGp3i/vy0zHGKLkSw5crghGPM+HF8RO6r6diOvaQVTQu0xrxHKUgoyVqRMQbXIF3E+Omn+P2BDMV+mfEF83DrZjQZbCYp6NmCf5RUdKj5rK8adyS5pEZYZsJHkzMMBK5XRiSTJY18Bi0zzRxfnmIKMH/sKkBMrk+G/z9rVNgHQps4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEdklEQVR42m1VWUycVRgd2vfy5pOJD7a0aaq0D4rRqi++WAVshcpaFhOMWE1MNC1QytaylJqW2nSBGgnaRmBYylZKRRaVUnZZZmGAGcAZGByYDrPA8N//Hr/7zzC2hpucmS937j1z7ved+12Vyj8ABBF2i5hz2x6KkwgNW5K84NpgkpsgYjEnfuOc7/Hv2y32qp4dfrJd/jiGFhu1ZqDykZN/e2sBqcUGpJQY8A3FP3Y4+dQiIMuyUaz179kVIPWTBal832U2N5D/0xIPz5hiAtHntfxkrg4CIg4/65sXa2wuiFFGLEHP8ASUlU1bgcRCnXT83IQck6fDR5kaRBA+Pq9FFOHDsxRna5FwQY+IjEk5Jl8vGW3bpKoAlwgSZPoY0HiY3QEuS8CUyY2KFgtqu1cwrHdiSOfEg/5VZJabEEl/El+gR1S2hsfm6ZhlTSFN2CYLpozoxYxbWpEHzM3ona/BlryhrLJTCtrHgIeEv+aBdQ/Q3GdTlMYX6EipRs6ptIDJEBzBKsa8KWJjr6mepbe+jRPVL6JecxPz7hG0WArg8rpQ1QUU1DIU1cm4+ZBjjXLXQqSRWRrl+OEZGjY8IwmaFKFQbfSMIaHuAItV70NBTyLsW2ZUmGKQpw3FoOMOZi1A6X2G620cpY0cN9oFKUfWHZOiVBSpvM0hCNUqcJgu96chse4gj1OHoMNwD6PrtSjSh+HazPu4bTyOZdcSKjqA75pkfE+kF0npMJnmwRObUIfoHA3/+sYCNrdko2p90y6lt76F1MYjSGo4hNGlbrSvFOKS/igRHsMVw3tY9k6gbQgoaWAKYUkDR9solGJF52hxkpBcZIDDJUkq5+ZT6XTbUaQ0HibCV4iwiwgvonT6HVyefhcN5nOwyzoMzXnouMC1bcIRYGTaR/gJeTSpaBpPnVuSyittmLJ7TiC54VUeo34Zv878glFHNQp1r+P67AcwOH+H2vwVzE4LyunYZa0yCsWR56j6T1aVwgj7nLm9SJXmRqUoP2vzEafex07RkS/0nILda8ZVOmrLUi5mXX0o0r2BOc9vGCRj5NZISqVX1zmyfzCR2adw7MwUGzAwf1Go1OOr3YirC2FpTWGIrwvBI1Jp8Y5h0TOKTutVZE3tRfXfX8Lj9aJpgKr4D0f7wAqpm8DpMgM6Bu0KG2M+2wTLkPTFfUmkcr+c1vQakhoPoWPmrmLsGXcvmq3ZaLXmwi4twjc4bHQ7HIpTZNk/SfrXggNXb3lzFp/eP8JELgVpfN1+5PfEo3OuBhPWPzFp7UO7oQpXHn+BytF8dJqq0Gq4xe+OFzEPnM9dvUBzWNgcR+r9w5JQ+llzmGIjYfaUxlAFlBYk1h+kPzuA8HsvyFHVL0mTzu7nm8N/bUfla19sHsWPk3mseq+4OSy5MZQLSwmImMzPKM/sUn8qX5WVFJTBtzfo/z0x0GAZk4waxx+o0ubxzK5IpLe+ic8JGV0RNJfDJx29kNjWzg12pyeAch54AsinCw7PKnN4bEzE20+AWLPTE/AveMqCFjA2eBAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;clojure logo&quot;
         title=&quot;&quot;
         src=&quot;/static/3f6b9822d26df54902705c24ed8bb6fa/72799/clojure_logo.png&quot;
-        srcset=&quot;/static/3f6b9822d26df54902705c24ed8bb6fa/12f09/clojure_logo.png 148w,
-/static/3f6b9822d26df54902705c24ed8bb6fa/e4a3f/clojure_logo.png 295w,
+        srcset=&quot;/static/3f6b9822d26df54902705c24ed8bb6fa/c26ae/clojure_logo.png 158w,
+/static/3f6b9822d26df54902705c24ed8bb6fa/6bdcf/clojure_logo.png 315w,
 /static/3f6b9822d26df54902705c24ed8bb6fa/72799/clojure_logo.png 320w&quot;
         sizes=&quot;(max-width: 320px) 100vw, 320px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h3&gt;Neden fonksiyonel programlama?&lt;/h3&gt;
-&lt;p&gt;Nesne yönelimli programlama dilleri (&lt;em&gt;JAVA&lt;/em&gt;) anlaşılması kolay ve uygulanabilir olarak görünüyor. OOP gerçek dünyayı sanal dünya ile ilişkilendirip anlaşılması kolay bir yapı sunuyor bizlere fakat gerçekten de anlaşılması kolay bir yapımı sunuyor yoksa daha fazla karmaşık bir halemi getiriyor. Fonksiyonel programlamanın temelinde yatan şey de her şeyin temeli olan &lt;em&gt;Matematik&lt;/em&gt;‘le ifade edilebilir. Bir programın girdileri ve çıktıları olur aynı matematikteki fonksiyonlar gibi.&lt;/p&gt;
-
-  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/d6839f5460a2b6620ed191e7b51a7fec/0f246/fn.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-  
-  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 20.945945945945947%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAmUlEQVQY022Q4Q6CMAyEeQ/YusFQhiJsIMEE3/+xTlodQeOPS3rd7WvTTCnCr4wpYW0FIis+z5XULK7//UnKtCZobXYVhUaMI6bpjr4PaBovoLo+S58zVeUwDGHLKvEMYo4Ak0lgBnI4xgnr+kTbXuH9BV13wzwv21tECCOW5fEBme8NUzOJfVk6qYne4iF8gmPOudN+kuOGLy6nb93hjAe/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;
-      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot; alt=&quot;fn&quot; title=&quot;&quot; src=&quot;/static/d6839f5460a2b6620ed191e7b51a7fec/fcda8/fn.png&quot; srcset=&quot;/static/d6839f5460a2b6620ed191e7b51a7fec/12f09/fn.png 148w,
-/static/d6839f5460a2b6620ed191e7b51a7fec/e4a3f/fn.png 295w,
-/static/d6839f5460a2b6620ed191e7b51a7fec/fcda8/fn.png 590w,
-/static/d6839f5460a2b6620ed191e7b51a7fec/efc66/fn.png 885w,
-/static/d6839f5460a2b6620ed191e7b51a7fec/0f246/fn.png 1118w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot;&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
+&lt;p&gt;Nesne yönelimli programlama dilleri (&lt;em&gt;JAVA&lt;/em&gt;) anlaşılması kolay ve uygulanabilir olarak görünüyor. OOP gerçek dünyayı sanal dünya ile ilişkilendirip anlaşılması kolay bir yapı sunuyor bizlere fakat gerçekten de anlaşılması kolay bir yapımı sunuyor yoksa daha fazla karmaşık bir halemi getiriyor. Fonksiyonel programlamanın temelinde yatan şey de her şeyin temeli olan &lt;em&gt;Matematik&lt;/em&gt;&apos;le ifade edilebilir. Bir programın girdileri ve çıktıları olur aynı matematikteki fonksiyonlar gibi.&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/d6839f5460a2b6620ed191e7b51a7fec/0f246/fn.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 20.88607594936709%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAiElEQVR42oWQaQrCMBCFe4+2WQxptISsJliEev9TPc2ooBLwxwdv5s2WDIwJ/CLEgeBcUjzP/BU/da+n5aVUGHpGSmfEmGGtg9YG08RgzAnOBdLLcnxoj3Gcv5Z2BzZyLiilYt9vWFdLeB9R6wUhJPK37UrD/17YUErT5lbwvqDlPr+heb0n3wF+enBvrgVrdQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;fn&quot; title=&quot;&quot; src=&quot;/static/d6839f5460a2b6620ed191e7b51a7fec/f058b/fn.png&quot; srcset=&quot;/static/d6839f5460a2b6620ed191e7b51a7fec/c26ae/fn.png 158w,
+/static/d6839f5460a2b6620ed191e7b51a7fec/6bdcf/fn.png 315w,
+/static/d6839f5460a2b6620ed191e7b51a7fec/f058b/fn.png 630w,
+/static/d6839f5460a2b6620ed191e7b51a7fec/40601/fn.png 945w,
+/static/d6839f5460a2b6620ed191e7b51a7fec/0f246/fn.png 1118w&quot; sizes=&quot;(max-width: 630px) 100vw, 630px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
   &lt;/a&gt;
-    
+    &lt;/span&gt;
 &lt;p&gt;Yukarıda görmüş olduğumuz ifade hepimizin bir şekilde karşılaştığı bir görseldir. Görselde ki ifadeyi clojure ile yazalım.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;clojure&quot;&gt;&lt;pre class=&quot;language-clojure&quot;&gt;&lt;code class=&quot;language-clojure&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;defn&lt;/span&gt; f &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Fonksiyonu &lt;em&gt;clojure&lt;/em&gt; ile yazdık ve gördük ki ne kadar da kolaymış aslında. Fonksiyonel bir programlama dilinde geliştirilen code en küçük fonksiyonlardan en büyük fonksiyonlara doğrudur. Betimlemek istersek, &lt;em&gt;obeb&lt;/em&gt; alan bir fonksiyon yazarız ve bunu daha büyük bir fonksiyonda kullanırız.&lt;/p&gt;
 &lt;p&gt;Clojure dilinin getirileri arasında benim en çok sevdiğim ve hayatımı kolaylaştıran bir özelliği de veri manipülasyonunun çok kolay ve anlaşılır bir ifadeyle ortaya koymasıdır. Basit bir örnek vermek gerekirse. Bir dizi içerisinde çift sayıları filtreleyelim.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;clojure&quot;&gt;&lt;pre class=&quot;language-clojure&quot;&gt;&lt;code class=&quot;language-clojure&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;filter&lt;/span&gt; even? &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;; =&gt; (2 4 6)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Neden fonksiyonel programlama dediğimizde örnekleri bu şekilde çoğaltabiliriz.&lt;/p&gt;
-&lt;h3&gt;Clojure’a giriş&lt;/h3&gt;
+&lt;h3&gt;Clojure&apos;a giriş&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Sayısal Türler&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;clojure&quot;&gt;&lt;pre class=&quot;language-clojure&quot;&gt;&lt;code class=&quot;language-clojure&quot;&gt;&lt;span class=&quot;token number&quot;&gt;42&lt;/span&gt;        &lt;span class=&quot;token comment&quot;&gt;; integer&lt;/span&gt;
 -&lt;span class=&quot;token number&quot;&gt;1.5&lt;/span&gt;      &lt;span class=&quot;token comment&quot;&gt;; floating point&lt;/span&gt;
@@ -302,54 +320,51 @@
 &lt;span class=&quot;token operator&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;     &lt;span class=&quot;token comment&quot;&gt;; set&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:a&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:b&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;; map&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Clojure ifade değerlendirmesi&lt;/h3&gt;
-&lt;p&gt;
-  &lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; &quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/359f0da15cd24bb6af01353112bd945e/e17e5/clojure_evaluation.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 400px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
     &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAcgAAAHIAG4pR87AAAClUlEQVQoz2NIS0tjvnDhQsKjR49KTp48GcbAwMAIxAxxcXEMSIADiIWBWBSI+YCYF4qFoJgDrnL+/Pmct2/ffvvq1av/N2/evAozEA1wArE4EEsAsQDUUAEoXxwqDwEbN27kvHTp0r2zZ8/+B+JTQCF2dg42FkNjfW6/UHfW////M7CwMjPgApxsHAxANYwnm1cx/112nYGhqKiI89y5c3eArvx/4sSJY1BvgWzmB2nQUTNkkJGSw2ng2ba1DA8n72e4M2EXw/8v/xkYjI2Nmdra2tSmTJmi39zcogxUw8LBwqN7+cI1kwsXzhvoMqQzhelXM6RFF6EYVBuYCXIZGB+sWxxxrHG59//VdxkY2NjYGLZu3cqwc+dOBkEOSYaNZ6YxLNvfW7HpwtT/ay61/59+oCBj1uEihsv/5zEhG7g4q4uxL7aCId8zTubuxN3/b/Xv/AwKLpCcPisrq7GgoKAwOyebKShY7Px1vFr3+1SXrrduKljoCPZvaGIQm6KyOguILSIqxpDgFAQ2GOTCdcWTW3dUzs79vegaWAzkl1lAHA/Ee9g5WUFhyFi11h2oeDYDNDYFgZgbZJaCkhozNw8vg7SkNIO8gjKTrrE1SA0PyGAGPnCwMyQA8RUoLQLzUsFMd1YoUzUpLlTz2pWLRltXz+R5/fU/g5CwKKuAoAiLjqE1w6ydPzgWL9livn37MR2rlE1gH4ASqC8Q20INAIdVQ9dcxvzydoa41GKZjftvfth69Nn/eRuunoamAk0FOUklIC11Zte0hc8vLf9/58ik/9f2tCQjhzMjcqLumXeYYfWyOQyTOsuZuxZdSq+fc31mxaSTISA5JT0PxrOrU0EWMx1aGOt/ZVXIsrML3RYcmettAAAqBOqodSxItwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.69620253164557%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAcgAAAHIAG4pR87AAAB/0lEQVR42mNIS0tjvXLlSvmzZ8/6z5w5k83AwMDIgAm4gFgCiKWAWBCKBYBYHIq54CpXrVrF+eTJk4f/gQBInwIKMUOlkA3mAGIRIBYFYj4g5oHSIDFhqDzCwMuXLz+4ffv2/3Pnzp0BCnGDFMjrywvYx9tzMBAB/q9axQzCYE5hYSHn6dOnLwIN/HP8+PHdUFdIQl3BguRaRizBgS14GJiSk5PFc3NzZUA0yMtqamqml66d975w/ah7d3cxNz7NIHCicUXBqbZVichiIOcy//8PcfaS/Z01J98t+b/v9cT/U/bn5IDE6vfXsyBrqK+vZwLRWY5R8q/mnv75bNbxR7DIsWBhYbHm5OSUZmZj9gIFtrqZtGP9Xue4nKWG6YmtBsAgMGY19vHhkpeX58Dm0nmZbUWriiZGw/iFQLwYiNOBeBsQCyGFHRM0FgWhtgsipQLkYBADYk6YYCQQnwfiGCBmBxny/z8DY9pMY1aovGpjY6317dv33PfsOSYNNYRLRkYGbMCqbYdEd28/6H388HGHRYsWgcMbJGEPxDZI4ckATJZg2xMyq2V3nnj2+iwwpS7cevcMNCFryMmJKwJpubOHZi78/3b7/0+35/6/eag1FT0JYIRPPdDFTTPP+lVNv1pd3H3UDpryGP9DI+XAvGDbi8u820/Ps2/cNd1FFQDnSbGUh9eQsgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;clojure evaluation&quot;
         title=&quot;&quot;
         src=&quot;/static/359f0da15cd24bb6af01353112bd945e/e17e5/clojure_evaluation.png&quot;
-        srcset=&quot;/static/359f0da15cd24bb6af01353112bd945e/12f09/clojure_evaluation.png 148w,
-/static/359f0da15cd24bb6af01353112bd945e/e4a3f/clojure_evaluation.png 295w,
+        srcset=&quot;/static/359f0da15cd24bb6af01353112bd945e/c26ae/clojure_evaluation.png 158w,
+/static/359f0da15cd24bb6af01353112bd945e/6bdcf/clojure_evaluation.png 315w,
 /static/359f0da15cd24bb6af01353112bd945e/e17e5/clojure_evaluation.png 400w&quot;
         sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
       /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
   &lt;/a&gt;
-    &lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Clojure kaynak code okuyucu (Reader) tarafından okunur. Okuyucu, kaynağı (&lt;em&gt;.clj&lt;/em&gt;) uzantılı dosyalardan okuyabilir. Okuyucu clojure verilerini üretir. Clojure derleyicisi &lt;em&gt;JVM&lt;/em&gt; için byte code üretir.&lt;/p&gt;
 &lt;p&gt;Basit bir şekilde clojure nedir? Neden fonksiyonel programlama? ve clojure küçük bir giriş yaptık. Bundan sonraki yazılarda clojure ile API, Web, mobil ve masaüstü programlar nasıl geliştirilir bunları paylaşacağım.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;clojure&quot;&gt;&lt;pre class=&quot;language-clojure&quot;&gt;&lt;code class=&quot;language-clojure&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;defn&lt;/span&gt; bye &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;your-name&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hoşçakal &quot;&lt;/span&gt; your-name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Retrofit]]></title><description><![CDATA[GET  Get methodu ile genellikle server’dan bilgi talebinde bulunuldugu zaman kullanilir. @Path  Path ile url kisminda dinamik olarak…]]></description><link>https://burkaydurdu.github.io/retrofit/</link><guid isPermaLink="false">https://burkaydurdu.github.io/retrofit/</guid><pubDate>Mon, 15 May 2017 22:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;GET&lt;/h2&gt;
-&lt;p&gt; Get methodu ile genellikle server’dan bilgi talebinde bulunuldugu zaman kullanilir.&lt;/p&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hoşçakal &quot;&lt;/span&gt; your-name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Retrofit]]></title><description><![CDATA[GET Get methodu ile genellikle server'dan bilgi talebinde bulunuldugu zaman kullanilir. @Path Path ile url kisminda dinamik olarak…]]></description><link>https://burkaydurdu.github.io/retrofit/</link><guid isPermaLink="false">https://burkaydurdu.github.io/retrofit/</guid><pubDate>Mon, 15 May 2017 22:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;GET&lt;/h2&gt;
+&lt;p&gt;Get methodu ile genellikle server&apos;dan bilgi talebinde bulunuldugu zaman kullanilir.&lt;/p&gt;
 &lt;h4&gt;@Path&lt;/h4&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@GET&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;users/{name}/commit&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token class-name&quot;&gt;Call&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Commit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getCommitsByName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@Path&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt; Path ile url kisminda dinamik olarak değiştirebildiğimiz aralığa değerleri girmemizi sağlıyor. Bu aralık formatı &lt;code class=&quot;language-text&quot;&gt;/{değişken}/&lt;/code&gt; şeklinde olup alt satırda görülen bu methodu fonksiyon haline getiren Call ile başlayan yerde url kısmındaki değişkenlerin adini verip değer ataması yapmamızı sağlıyor.&lt;/p&gt;
+&lt;p&gt;Path ile url kisminda dinamik olarak değiştirebildiğimiz aralığa değerleri girmemizi sağlıyor. Bu aralık formatı &lt;code class=&quot;language-text&quot;&gt;/{değişken}/&lt;/code&gt; şeklinde olup alt satırda görülen bu methodu fonksiyon haline getiren Call ile başlayan yerde url kısmındaki değişkenlerin adini verip değer ataması yapmamızı sağlıyor.&lt;/p&gt;
 &lt;h4&gt;@Query&lt;/h4&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@GET&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;users&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token class-name&quot;&gt;Call&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getUserById&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@Query&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Integer&lt;/span&gt; id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt; Query url kısmında  &lt;strong&gt;../path?&lt;/strong&gt; yada &lt;strong&gt;.com?&lt;/strong&gt; yazıldıktan sonra &lt;code class=&quot;language-text&quot;&gt;name=burkay&amp;amp;password=1234&lt;/code&gt;seklinde veriler &lt;em&gt;key=value&lt;/em&gt; formatında olup birden fazla veri arasına &lt;strong&gt;&amp;#x26;&lt;/strong&gt; karakteri geliyor.&lt;/p&gt;
+&lt;p&gt;Query url kısmında  &lt;strong&gt;../path?&lt;/strong&gt; yada &lt;strong&gt;.com?&lt;/strong&gt; yazıldıktan sonra &lt;code class=&quot;language-text&quot;&gt;name=burkay&amp;amp;password=1234&lt;/code&gt;seklinde veriler &lt;em&gt;key=value&lt;/em&gt; formatında olup birden fazla veri arasına &lt;strong&gt;&amp;#x26;&lt;/strong&gt; karakteri geliyor.&lt;/p&gt;
 &lt;h2&gt;POST&lt;/h2&gt;
-&lt;p&gt;  Post metodu ile genellikle kayıt gibi işlemler yapılır. Form yapısında olan veriler server tarafına aktarılır.&lt;/p&gt;
+&lt;p&gt;Post metodu ile genellikle kayıt gibi işlemler yapılır. Form yapısında olan veriler server tarafına aktarılır.&lt;/p&gt;
 &lt;h4&gt;@Field&lt;/h4&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@FormUrlEncoded&lt;/span&gt;
 &lt;span class=&quot;token annotation punctuation&quot;&gt;@POST&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/api/register&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -384,7 +399,7 @@ Put, &lt;code class=&quot;language-text&quot;&gt;Post&lt;/code&gt; gibi field ke
 &lt;span class=&quot;token class-name&quot;&gt;Call&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;ResponseBody&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;friends&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
    &lt;span class=&quot;token annotation punctuation&quot;&gt;@QueryMap&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; filters&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Calling with foo.friends(ImmutableMap.of(“group”, “coworker”, “age”, “42”)) yields /friends?group=coworker&amp;#x26;age=42.&lt;/p&gt;
+&lt;p&gt;Calling with foo.friends(ImmutableMap.of(&quot;group&quot;, &quot;coworker&quot;, &quot;age&quot;, &quot;42&quot;)) yields /friends?group=coworker&amp;#x26;age=42.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Bu query map ile java tarafından query kodunu hash map fonksiyonu ile setleyip yollayabilmemize yarıyor.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@GET&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/news&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -423,7 +438,7 @@ Put, &lt;code class=&quot;language-text&quot;&gt;Post&lt;/code&gt; gibi field ke
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token annotation punctuation&quot;&gt;@GET&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/tasks/{task_id}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token class-name&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getTask&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@Path&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;task_id&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;long&lt;/span&gt; taskId&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Headerlar gönderilen verileri betimleyen anlaşılması sağlayan başlık bilgileridir. Burada gönderilen dosyanın formatı, dil ayarları ve birçok bilgi burada setlenerek gönderilir karşı taraf ise bu dosyayı alınca önce header’ı okur.&lt;/p&gt;
+&lt;p&gt;Headerlar gönderilen verileri betimleyen anlaşılması sağlayan başlık bilgileridir. Burada gönderilen dosyanın formatı, dil ayarları ve birçok bilgi burada setlenerek gönderilir karşı taraf ise bu dosyayı alınca önce header&apos;ı okur.&lt;/p&gt;
 &lt;p&gt;Header dinamik olarak güncellenebilir. Burada aşağıdaki örneği inceleyelim.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@GET&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/tasks&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
  &lt;span class=&quot;token class-name&quot;&gt;Call&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getTasks&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
@@ -444,7 +459,7 @@ Put, &lt;code class=&quot;language-text&quot;&gt;Post&lt;/code&gt; gibi field ke
 &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;onCreateService&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
        &lt;span class=&quot;token class-name&quot;&gt;Retrofit&lt;/span&gt; loginApi &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Retrofit&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Builder&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-               &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;baseUrl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Service&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;BASE_URL&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+               &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;baseUrl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Service&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;BASE_URL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
                &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addConverterFactory&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;GsonConverterFactory&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
                &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
        service &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; loginApi&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;ApiAutService&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
