@@ -1,80 +1,78 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+/**
+ * Bio component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
+ */
 
-import { rhythm } from "../utils/typography"
+import * as React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-function Bio() {
+const Bio = () => {
+  const data = useStaticQuery(graphql`
+      query BioQuery {
+        site {
+          siteMetadata {
+            author {
+              name
+              summary
+            }
+            social {
+              twitter
+              github
+              linkedin
+            }
+          }
+        }
+      }
+  `)
+
+  // Set these values by editing "siteMetadata" in gatsby-config.js
+  const author = data.site.siteMetadata?.author
+  const social = data.site.siteMetadata?.social
+
   return (
-    <StaticQuery
-      query={bioQuery}
-      render={data => {
-        const { author, social } = data.site.siteMetadata
-        return (
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
-            }}
+    <div className="bio">
+      <StaticImage
+        className="bio-avatar"
+        layout="fixed"
+        formats={["auto", "webp", "avif"]}
+        src="../images/profile.jpeg"
+        width={50}
+        height={50}
+        quality={95}
+        alt="Profile picture"
+      />
+      {author?.name && (
+        <div>
+        <p>
+          Written by <strong>{author.name}</strong> {author?.summary || null}
+        </p>
+        <p>
+          {` You should follow them on `}
+          <a href={`https://twitter.com/${social?.twitter || ``}`}
+             target={"_blank"}
           >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
-            <p>
-              I'm <strong>{author}</strong>
-              <p>
-                <a href={`https://twitter.com/${social.twitter}`}>
-                  Twitter
-                </a>
-                {` `}
-                <a href={`https://www.linkedin.com/${social.linkedin}`}>
-                  Linkedin
-                </a>
-                {` `}
-                and
-                {` `}
-                <a href={`https://github.com/${social.github}`}>
-                  Github
-                </a>
-              </p>
-            </p>
-          </div>
-        )
-      }}
-    />
+            Twitter
+          </a>
+          {` `}
+          <a href={`https://github.com/${social?.github || ``}`}
+             target={"_blank"}
+          >
+              Github
+          </a>
+          {` `}
+          <a href={`https://linkedin.com/${social?.linkedin || ``}`}
+             target={"_blank"}
+          >
+              Linkedin
+          </a>
+        </p>
+        </div>
+      )}
+    </div>
   )
 }
-
-const bioQuery = graphql`
-  query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile.jpeg/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    site {
-      siteMetadata {
-        author
-        social {
-          twitter
-          github
-          linkedin
-        }
-      }
-    }
-  }
-`
 
 export default Bio
