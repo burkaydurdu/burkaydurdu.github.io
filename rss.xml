@@ -1,4 +1,187 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[It is my blog site]]></description><link>https://burkaydurdu.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 29 Jul 2023 23:21:04 GMT</lastBuildDate><item><title><![CDATA[Generic Types in Golang]]></title><description><![CDATA[Generic Types in Golang Golang, also known as Go, is a statically typed programming language that was developed at Google. It has quickly…]]></description><link>https://burkaydurdu.github.io/go-generic-types/</link><guid isPermaLink="false">https://burkaydurdu.github.io/go-generic-types/</guid><pubDate>Sun, 19 Mar 2023 22:12:03 GMT</pubDate><content:encoded>&lt;h1&gt;Generic Types in Golang&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Burkay Durdu Blog]]></title><description><![CDATA[It is my blog site]]></description><link>https://burkaydurdu.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 05 Aug 2023 09:49:30 GMT</lastBuildDate><item><title><![CDATA[Message Queue RabbitMQ and Kafka]]></title><description><![CDATA[Message queuing systems have revolutionized the way modern applications communicate and handle data. Two prominent players in the message…]]></description><link>https://burkaydurdu.github.io/message-queue/</link><guid isPermaLink="false">https://burkaydurdu.github.io/message-queue/</guid><pubDate>Sat, 05 Aug 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Message queuing systems have revolutionized the way modern applications communicate and handle data. Two prominent players in the message queue landscape are RabbitMQ and Kafka. In this article, we will explore the features, advantages, and disadvantages of both systems to help you make an informed decision when choosing the right one for your project.&lt;/p&gt;
+&lt;h2&gt;RabbitMQ&lt;/h2&gt;
+&lt;p&gt;RabbitMQ is an open-source message broker that implements the Advanced Message Queuing Protocol (AMQP). It provides a robust and flexible messaging solution, making it a popular choice for various applications.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7521f7c9cbb4b5d621da409db1aaafb6/a0209/rabbitmq.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.34177215189873%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABUUlEQVR42pWQS0sCcRTF3bcNWvc5+gZ9kCBoE61atgvaRUTQStrVKonIQHpBCSVKpmmOj9Fp1NF8jI6PcZxfV6dIqE0XLvfec///w7nHxyRc9ye/Yxab3c30Lr+rD0OBWg7sAYyGoMWh1/I+233BvvBJP3kz6ExXXcua1v6gz3A4pNluYY9sIfSvwNEqqFFolOD2EOLn0NSg8ATpaygn4eVCWD4gF5Z8IJHPYfUsFDWPUshSrRuUjaoQbi7CxgLsLsPVnhAeQCIIqZDM+xALwL0fHo/h+cybUzcUazVUTUXVS6TzCs7YQavoQrg+D2tzsL0EgS1RGvEUBnfgTtQmLyFy4mGxU3gNMc6GMdomb7mMqKpQFNL3SpmCVhRCXc4pRqdnYFY9v6wm6AmpcmI143k6qVZDPOzi1lUcZyT+DRg5zrRvmW3MbkcI/wyX/+Cz6Ccl3Apu0GDw6AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;RabbitMQ&quot;
+        title=&quot;&quot;
+        src=&quot;/static/7521f7c9cbb4b5d621da409db1aaafb6/f058b/rabbitmq.png&quot;
+        srcset=&quot;/static/7521f7c9cbb4b5d621da409db1aaafb6/c26ae/rabbitmq.png 158w,
+/static/7521f7c9cbb4b5d621da409db1aaafb6/6bdcf/rabbitmq.png 315w,
+/static/7521f7c9cbb4b5d621da409db1aaafb6/f058b/rabbitmq.png 630w,
+/static/7521f7c9cbb4b5d621da409db1aaafb6/a0209/rabbitmq.png 725w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;RabbitMQ boasts the following key features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ease of Use:&lt;/strong&gt; RabbitMQ&apos;s straightforward integration and support for multiple client libraries make it accessible to developers using different programming languages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Message Reliability:&lt;/strong&gt; One of RabbitMQ&apos;s strengths is its focus on message reliability. It ensures that messages are delivered to their intended recipients even in the face of network failures and intermittent connection issues.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Exchange Types:&lt;/strong&gt; RabbitMQ supports various exchange types, including direct, topic, fanout, and headers, allowing different communication patterns between producers and consumers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Message Acknowledgment:&lt;/strong&gt; RabbitMQ allows consumers to acknowledge the receipt of messages, ensuring that messages are not lost in case of consumer failure.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Management Console:&lt;/strong&gt; RabbitMQ comes with a user-friendly management console, providing real-time insights into queues, exchanges, and bindings, making it easier to monitor and manage the message flow.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Kafka&lt;/h2&gt;
+&lt;p&gt;Kafka, developed by LinkedIn and later open-sourced by the Apache Software Foundation, is a distributed streaming platform designed to handle real-time data feeds and stream processing.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ee6abd1b7d84b6a45f59af81ae8739bb/31493/kafka.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.69620253164557%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABFElEQVR42qXTP0tCURjH8XuvSBjYP9AsGmpqaKqpoElEwUEHoSFqaFEcpLkGQaGhqKgh07QQggp8Gb2xvid+Jy6ne1088Fnuufc5z3Oe53re/xXA92ZcJ7hGJhTUU2A/5tAgLtginjFAFevYcgL6CpBwArl7f4cf4xU7+MQLFiQd+tiuDUlGZZjCI77Qxwj32jvTdawhjyMc4gO3KChwBTUsmY9K2jQvjrGPXQWs4xunaKOFIS7RwwRNPTdJlG2GDyrVZninEk1272iggys1zxzUxRPOcaErK4bv8M25Q9OseWSxim0cYEWWkdNkmIr2MGe73FOnbZc3Q42YNpdxY/Vb2o0zh37EaATOKLljFRl8pj/lB/6KJRlKXGtaAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Kafka&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ee6abd1b7d84b6a45f59af81ae8739bb/f058b/kafka.png&quot;
+        srcset=&quot;/static/ee6abd1b7d84b6a45f59af81ae8739bb/c26ae/kafka.png 158w,
+/static/ee6abd1b7d84b6a45f59af81ae8739bb/6bdcf/kafka.png 315w,
+/static/ee6abd1b7d84b6a45f59af81ae8739bb/f058b/kafka.png 630w,
+/static/ee6abd1b7d84b6a45f59af81ae8739bb/31493/kafka.png 664w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Kafka&apos;s key features include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Scalability:&lt;/strong&gt; Kafka is designed to be highly scalable and can handle large volumes of data and high message throughput. Its distributed architecture enables seamless horizontal scaling as data size and load increase.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Durability:&lt;/strong&gt; Kafka stores messages on disk, providing durability even in the event of system failures. This feature makes it an excellent choice for applications that require long-term data retention.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Real-time Data Streaming:&lt;/strong&gt; Kafka&apos;s ability to process real-time data streams makes it ideal for scenarios like real-time analytics, log processing, and event-driven architectures.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Partitioning:&lt;/strong&gt; Kafka partitions data across multiple nodes in a cluster, enabling parallel processing and efficient data distribution.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Exactly-Once Semantics:&lt;/strong&gt; Kafka provides strong message delivery guarantees, ensuring that messages are delivered once and only once to consumers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/46fcbd6d9e1c4e1d71437658980e98e6/faddd/rabbit-kafka.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.79746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAEDBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHtNCRS/wD/xAAWEAEBAQAAAAAAAAAAAAAAAAARASD/2gAIAQEAAQUCq1z/AP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABYQAAMAAAAAAAAAAAAAAAAAAAAgIf/aAAgBAQAGPwIi/wD/xAAbEAACAgMBAAAAAAAAAAAAAAABEQAxICFRcf/aAAgBAQABPyElqvIejDlOCsP/2gAMAwEAAgADAAAAEMcP/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8Qh//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EAB0QAQACAgIDAAAAAAAAAAAAAAEAESExQVEQYcH/2gAIAQEAAT8QpDBdt174h2gFMnk/Iml75xKJR14//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Kafka&quot;
+        title=&quot;&quot;
+        src=&quot;/static/46fcbd6d9e1c4e1d71437658980e98e6/828fb/rabbit-kafka.jpg&quot;
+        srcset=&quot;/static/46fcbd6d9e1c4e1d71437658980e98e6/ff44c/rabbit-kafka.jpg 158w,
+/static/46fcbd6d9e1c4e1d71437658980e98e6/a6688/rabbit-kafka.jpg 315w,
+/static/46fcbd6d9e1c4e1d71437658980e98e6/828fb/rabbit-kafka.jpg 630w,
+/static/46fcbd6d9e1c4e1d71437658980e98e6/faddd/rabbit-kafka.jpg 850w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Cons&lt;/h2&gt;
+&lt;h3&gt;RabbitMQ:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Performance:&lt;/strong&gt; While RabbitMQ is efficient for moderate workloads, its performance might degrade under heavy loads and high message throughput compared to Kafka.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Complex Event Processing:&lt;/strong&gt; RabbitMQ is not designed for complex event processing, which might limit its usability for certain use cases.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kafka:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Learning Curve:&lt;/strong&gt; Kafka&apos;s initial setup and configuration can be more complex compared to RabbitMQ, which might require more time and effort for beginners.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Resource Consumption:&lt;/strong&gt; Kafka&apos;s disk storage requirements and memory consumption can be relatively higher, especially when dealing with large volumes of data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Pros&lt;/h2&gt;
+&lt;h3&gt;RabbitMQ:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ease of Use:&lt;/strong&gt; As mentioned earlier, RabbitMQ&apos;s straightforward integration makes it an excellent choice for developers of varying expertise.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Message Reliability:&lt;/strong&gt; The focus on message reliability ensures that messages are delivered without loss or duplication.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Exchange Flexibility:&lt;/strong&gt; RabbitMQ&apos;s support for various exchange types allows developers to implement a wide range of messaging patterns.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kafka:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Scalability:&lt;/strong&gt; Kafka&apos;s distributed architecture enables it to handle vast amounts of data and scale horizontally as needed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Durability:&lt;/strong&gt; Kafka&apos;s ability to store messages on disk provides durability and fault tolerance, making it a reliable choice for critical applications.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Real-time Processing:&lt;/strong&gt; Kafka&apos;s support for real-time data streams is a significant advantage for applications requiring immediate data insights.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In conclusion, both RabbitMQ and Kafka are powerful message queuing systems, each with its unique strengths and weaknesses. When choosing between the two, it&apos;s essential to consider your specific requirements and use case. RabbitMQ excels in ease of use and message reliability, making it a great choice for straightforward messaging needs. On the other hand, Kafka&apos;s scalability and real-time data processing capabilities make it ideal for scenarios that demand high throughput and fault-tolerance.&lt;/p&gt;
+&lt;p&gt;Ultimately, the decision between RabbitMQ and Kafka depends on your project&apos;s specific needs and constraints. Both systems have been proven in various scenarios and can significantly contribute to building a robust and efficient messaging infrastructure for your applications. As you make your choice, remember to evaluate factors such as performance, scalability, ease of use, and the complexity of your application&apos;s messaging requirements. Happy queuing!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&quot;Choose wisely, and your message queue will be the backbone of your distributed systems.&quot;&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Generic Types in Golang]]></title><description><![CDATA[Generic Types in Golang Golang, also known as Go, is a statically typed programming language that was developed at Google. It has quickly…]]></description><link>https://burkaydurdu.github.io/go-generic-types/</link><guid isPermaLink="false">https://burkaydurdu.github.io/go-generic-types/</guid><pubDate>Sun, 19 Mar 2023 22:12:03 GMT</pubDate><content:encoded>&lt;h1&gt;Generic Types in Golang&lt;/h1&gt;
 &lt;p&gt;Golang, also known as Go, is a statically typed programming language that was developed at Google. It has quickly gained popularity among developers due to its simplicity, efficiency, and concurrency support. One of the key features of Golang is its support for Generic Types.&lt;/p&gt;
 &lt;p&gt;Generic Types in Golang allow the creation of functions and data structures that can work with different types of data, without having to rewrite the code for each new data type. This feature greatly reduces the amount of code that needs to be written, making it easier to maintain and extend applications over time.&lt;/p&gt;
 &lt;h3&gt;Benefits of using Generic Types in Golang&lt;/h3&gt;
@@ -238,14 +421,14 @@
 &lt;li&gt;A &lt;code class=&quot;language-text&quot;&gt;stack&lt;/code&gt; is a continuous region of memory, allocating local context for each executed function.&lt;/li&gt;
 &lt;li&gt;A &lt;code class=&quot;language-text&quot;&gt;heap&lt;/code&gt; is a much larger region, storing everything allocated dynamically.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;./stack.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;stack.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;As you can see, the functions are added to the stack, executed and later deleted. It&apos;s the so-called LIFO way - Last In, First Out. Each entry in the call stack is called a &lt;code class=&quot;language-text&quot;&gt;stack frame&lt;/code&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;However, JS can also be non-blocking and behave as if it were multi-threaded. It means that it doesn&apos;t wait for the response of an API call, I/O events, etc., and can continue the code execution. It is possible thanks to the JS engines which use (under the hood) real multi-threading languages, like C++ (Chrome) or Rust (Firefox). They provide us with the Web API under the browser hoods or ex. I/O API under Node.js.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./callback-queue.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;callback-queue.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Note&lt;/h3&gt;
