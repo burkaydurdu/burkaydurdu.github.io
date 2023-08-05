@@ -47,13 +47,13 @@ date: "2022-03-27"
 - A `stack` is a continuous region of memory, allocating local context for each executed function.
 - A `heap` is a much larger region, storing everything allocated dynamically.
 
-![](./stack.gif)
+![](stack.gif)
 
 - As you can see, the functions are added to the stack, executed and later deleted. It's the so-called LIFO way - Last In, First Out. Each entry in the call stack is called a `stack frame`.
 
 - However, JS can also be non-blocking and behave as if it were multi-threaded. It means that it doesn't wait for the response of an API call, I/O events, etc., and can continue the code execution. It is possible thanks to the JS engines which use (under the hood) real multi-threading languages, like C++ (Chrome) or Rust (Firefox). They provide us with the Web API under the browser hoods or ex. I/O API under Node.js.
 
-  ![](./callback-queue.gif)
+  ![](callback-queue.gif)
 
 ### Note
 
